@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "country": "India",
+        "capital": "New Delhi",
+        "population": 1400000000,
+        "fact": "Home to the Taj Mahal, one of the New Seven Wonders of the World."
+    },
+    {
+        "id": 2,
+        "country": "France",
+        "capital": "Paris",
+        "population": 67000000,
+        "fact": "Paris is known as the 'City of Light' and is home to the Eiffel Tower."
+    },
+    {
+        "id": 3,
+        "country": "China",
+        "capital": "Beijing",
+        "population": 1412000000,
+        "fact": "China has the longest man-made structure, the Great Wall."
+    },
+    {
+        "id": 4,
+        "country": "Egypt",
+        "capital": "Cairo",
+        "population": 109000000,
+        "fact": "The Pyramids of Giza are the last surviving Wonder of the Ancient World."
+    },
+    {
+        "id": 5,
+        "country": "United States",
+        "capital": "Washington, D.C.",
+        "population": 332000000,
+        "fact": "Home to the Statue of Liberty and the Grand Canyon."
+    },
+    {
+        "id": 6,
+        "country": "Italy",
+        "capital": "Rome",
+        "population": 59000000,
+        "fact": "Rome\u2019s Colosseum is one of the greatest works of Roman architecture."
+    },
+    {
+        "id": 7,
+        "country": "Brazil",
+        "capital": "Bras\u00edlia",
+        "population": 214000000,
+        "fact": "Rio de Janeiro\u2019s Christ the Redeemer statue is a world icon."
+    },
+    {
+        "id": 8,
+        "country": "Australia",
+        "capital": "Canberra",
+        "population": 26000000,
+        "fact": "Sydney Opera House is a UNESCO World Heritage Site."
+    },
+    {
+        "id": 9,
+        "country": "Japan",
+        "capital": "Tokyo",
+        "population": 125000000,
+        "fact": "Mount Fuji is Japan\u2019s tallest peak and a symbol of the country."
+    },
+    {
+        "id": 10,
+        "country": "Mexico",
+        "capital": "Mexico City",
+        "population": 126000000,
+        "fact": "Chichen Itza is one of the New Seven Wonders of the World."
+    }
+]

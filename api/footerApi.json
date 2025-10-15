@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "FaLocationDot",
+        "title": "Find us",
+        "details": "Ujjain, Madhya Pradesh"
+    },
+    {
+        "icon": "IoCallSharp",
+        "title": "Call us",
+        "details": "1234567890"
+    },
+    {
+        "icon": "IoMdMail",
+        "title": "Mail us",
+        "details": "Mailus@gmail.com"
+    }
+]
