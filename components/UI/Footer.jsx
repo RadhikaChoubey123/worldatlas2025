@@ -3,6 +3,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoCallSharp } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
 import { NavLink } from "react-router-dom";
+import { IoLogoGithub } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
     const footerIcons = {
@@ -12,39 +14,57 @@ export const Footer = () => {
     };
 
     return (
-        <footer className="bg-neutral-900 text-white">
-            {/* Top section */}
-            <div className="grid grid-cols-1 gap-12  sm:grid-cols-2 md:grid-cols-3 lg:gap-60 px-6 py-8 place-items-center max-w-[68rem] md:px-3 mx-auto">
-                {footerContact.map((curElem, index) => {
-                    const { icon, title, details } = curElem;
-                    return (
-                        <div key={index} className="flex items-start place-self-start sm:items-center gap-4 text-left sm:text-left">
-                            <div className="text-blue-700 text-3xl">{footerIcons[icon]}</div>
-                            <div>
-                                <p className="text-base font-bold">{title}</p>
-                                <p className="text-neutral-400 text-sm">{details}</p>
-                            </div>
-                        </div>
-                    );
-                })}
+        <footer className="bg-neutral-950 text-white">
+            {/* Top */}
+            <div className="max-w-[75rem] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                {/* Branding */}
+                <div className="space-y-3">
+                    <h2 className="text-2xl font-bold text-blue-600">WorldAtlas</h2>
+                    <p className="text-neutral-400 text-sm">
+                        Explore information about countries around the world.
+                    </p>
+
+                    
+                </div>
+
+                {/* Quick Links */}
+                <div>
+                    <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
+                    <ul className="flex flex-col gap-2 text-sm text-neutral-400">
+                        <NavLink to="/" className="hover:text-white duration-200">Home</NavLink>
+                        <NavLink to="/about" className="hover:text-white duration-200">About</NavLink>
+                        <NavLink to="/country" className="hover:text-white duration-200">Country</NavLink>
+                    </ul>
+                </div>
+
+                {/* Contact */}
+                <div>
+                    <h3 className="text-lg font-semibold mb-3">Contact Info</h3>
+                    <ul className="space-y-2">
+                        {footerContact.map(({ icon, title, details }, i) => (
+                            <li key={i} className="flex items-center gap-3 text-sm">
+                                <span className="text-blue-600 text-lg">{footerIcons[icon]}</span>
+                                <span className="text-neutral-400">{details}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
             </div>
 
-            {/* Bottom section */}
-            <div className="border-t border-neutral-700 bg-stone-950 ">
-                <div className="flex flex-col md:flex-row justify-between  max-w-[68rem]  mx-auto items-center gap-4 px-6 md:px-2 py-4">
-                    <p className="text-neutral-500 text-sm">
-                        © {new Date().getFullYear()} All Rights Reserved
-                    </p>
-                    <div className="flex gap-6 text-sm">
-                        <NavLink to="/" className="text-neutral-400 hover:text-white">
-                            Home
-                        </NavLink>
-                        <NavLink to="/contact" className="text-neutral-400 hover:text-white">
-                            Contact
-                        </NavLink>
-                        <NavLink to="#" className="text-neutral-400 hover:text-white">
-                            Social
-                        </NavLink>
+            {/* Bottom */}
+            <div className="border-t border-neutral-800">
+                <div className="max-w-[75rem] mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-500">
+                    <p>© {new Date().getFullYear()} WorldAtlas — All Rights Reserved</p>
+                    {/* Social Icons */}
+                    <div className="flex gap-4 text-2xl mt-4">
+                        <a href="https://github.com/RadhikaChoubey123" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 duration-200">
+                            <IoLogoGithub />
+                        </a>
+                        <a href="http://www.linkedin.com/in/radhika-choubey" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 duration-200">
+                            <FaLinkedin />
+                        </a>
                     </div>
                 </div>
             </div>
