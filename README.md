@@ -5,4 +5,4 @@ World Atlas is a web application built with React and styled using Tailwind CSS 
 
 🌐 Live Demo
 
-Deployed on Netlify: https://worldatlas2025.netlify.app
+Deployed on Netlify : https://worldatlas2025.netlify.app
